@@ -4,7 +4,8 @@ import { Button } from "react-bootstrap";
 function EditTodoForm ({task, editTodo}) {
     const [value, setValue] = useState(task.task)
 
-function handleSubmit (e) {
+
+    function handleSubmit (e) {
     e.preventDefault();
     editTodo(value, task.id)
     setValue("")
